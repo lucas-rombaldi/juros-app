@@ -1,8 +1,8 @@
 # JurosApp
 
-<div style="text-align:center">
+<p align="center">
 <img src="https://github.com/lucas-rombaldi/juros-app/blob/master/docs/images/base-image.jpg?raw=true" height="100" width="100"/>
-</div>
+</p>
 
 This is a simple application that provides some services to get taxes and calculate compound interests.
 This application is made in a microservice architecture, where the Tax Provider API is totally independant from the Calculation API, even they're in the same solution for now.
