@@ -5,7 +5,7 @@
 This is a simple application that provides some services to get taxes and calculate compound interests. 
 This application is made in a microservice architecture, where the Tax Provider API is totally independant from the Calculation API, even they're in the same solution for now.
 
-![CI](https://github.com/lucas-rombaldi/juros-app/workflows/ci/badge.svg)
+![Build and test](https://github.com/lucas-rombaldi/juros-app/workflows/Build%20and%20test/badge.svg)
 
 ## Release Notes
 
