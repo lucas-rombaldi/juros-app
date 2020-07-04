@@ -1,7 +1,7 @@
 # JurosApp
 
 <p align="center">
-<img src="https://github.com/lucas-rombaldi/juros-app/blob/master/docs/images/base-image.jpg?raw=true" height="100" width="100"/>
+<img src="https://github.com/lucas-rombaldi/juros-app/blob/master/docs/images/base-image.png?raw=true" height="100" width="100"/>
 </p>
 
 This is a simple application that provides some services to get taxes and calculate compound interests.
