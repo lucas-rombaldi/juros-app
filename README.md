@@ -1,6 +1,6 @@
 # JurosApp
 
-<img src="https://github.com/lucas-rombaldi/juros-app/blob/master/docs/images/percentual.jpg?raw=true"/>
+<img src="https://github.com/lucas-rombaldi/juros-app/blob/master/docs/images/percentual.jpg?raw=true" height="100" width="100"/>
 
 
 
