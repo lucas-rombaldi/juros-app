@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JurosApp.Calculo.Api</name>
+    </assembly>
+    <members>
+        <member name="T:JurosApp.Calculo.Api.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:JurosApp.Calculo.Api.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:JurosApp.Calculo.Api.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:JurosApp.Calculo.Api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:JurosApp.Calculo.Api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)">
+            <summary>
+            
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+            <param name="provider"></param>
+        </member>
+        <member name="M:JurosApp.Calculo.Api.V1.Controllers.CodeController.Get">
+            <summary>
+            Retorna a URL do repositório do GitHub contendo o código fonte desta aplicação.
+            </summary>
+            <returns>URL do repositório do GitHub</returns>
+        </member>
+        <member name="M:JurosApp.Calculo.Api.V1.Controllers.JurosController.CalculaJuros(JurosApp.Calculo.Api.V1.Models.CalculaJurosDTO)">
+            <summary>
+            Realiza o cálculo de juros de uma operação.
+            </summary>
+            <param name="calculaJurosDTO">Dados para realizar o cálculo de juros.</param>
+            <returns>Valor calculado com os juros aplicados.</returns>
+        </member>
+    </members>
+</doc>

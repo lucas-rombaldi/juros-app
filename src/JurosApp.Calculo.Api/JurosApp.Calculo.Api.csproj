@@ -1,14 +1,30 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UserSecretsId>f56fa3c8-afee-4c11-9da8-1a461046c090</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>..\..</DockerfileContext>
+	  <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;1591</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+	  <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="4.1.1" />
+	  <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="4.1.1" />
+	  <PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.1.0" />
+	  <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+	  <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.5.1" />
+	  <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="5.5.1" />
+	  <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="5.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JurosApp.Calculo.Application\JurosApp.Calculo.Application.csproj" />
+    <ProjectReference Include="..\JurosApp.SharedKernel\JurosApp.SharedKernel.csproj" />
   </ItemGroup>
 
 

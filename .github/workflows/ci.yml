@@ -1,0 +1,30 @@
+name: "Build and test"
+
+on:
+  push:
+    branches:
+      - master
+
+env:
+  NETCORE_VERSION: '3.1.x'
+
+jobs:
+  build:
+    name: Build and deploy
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup .NET Core SDK ${{ env.NETCORE_VERSION }}
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: ${{ env.NETCORE_VERSION }}
+
+    - name: Restore packages
+      run: dotnet restore
+
+    - name: Build app
+      run: dotnet build --configuration Release --no-restore
+
+    - name: Test app
+      run: dotnet test --no-build

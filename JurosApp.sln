@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{54E8D4A3-0D5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6458FF2F-BD41-493A-927A-11C1909CFB83}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BoundedContexts", "BoundedContexts", "{D33D10FF-1BC1-44F9-96EF-F162B1C9EF53}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microservices", "Microservices", "{D33D10FF-1BC1-44F9-96EF-F162B1C9EF53}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Taxas", "Taxas", "{EF5C3DCA-96DF-4E9B-BF62-C4BB4835825F}"
 EndProject
@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Calculo", "Calculo", "{7BB5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharedKernel", "SharedKernel", "{115E36F8-4777-4F5B-85AF-884FDECB13FA}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BoundedContexts", "BoundedContexts", "{613FDE1B-888E-4B68-8492-5F11A20579C0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microservices", "Microservices", "{613FDE1B-888E-4B68-8492-5F11A20579C0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Calculo", "Calculo", "{AF22F09E-0128-425A-9C0B-E34F51BBE20C}"
 EndProject
@@ -27,23 +27,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JurosApp.Taxas.Api", "src\J
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JurosApp.Taxas.Application", "src\JurosApp.Taxas.Application\JurosApp.Taxas.Application.csproj", "{33492879-59C7-488E-B1DB-023FBEC0549D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JurosApp.Calculo.Api", "src\JurosApp.Calculo.Api\JurosApp.Calculo.Api.csproj", "{04AF1D9B-DB61-4884-99DE-3B1E78F91C8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JurosApp.Calculo.Api", "src\JurosApp.Calculo.Api\JurosApp.Calculo.Api.csproj", "{04AF1D9B-DB61-4884-99DE-3B1E78F91C8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JurosApp.Calculo.Application", "src\JurosApp.Calculo.Application\JurosApp.Calculo.Application.csproj", "{6A25890E-53DC-4519-B341-96D3CB4492D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JurosApp.Calculo.Application", "src\JurosApp.Calculo.Application\JurosApp.Calculo.Application.csproj", "{6A25890E-53DC-4519-B341-96D3CB4492D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JurosApp.SharedKernel", "src\JurosApp.SharedKernel\JurosApp.SharedKernel.csproj", "{401C6534-E6CC-4B69-B689-8855879410B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JurosApp.SharedKernel", "src\JurosApp.SharedKernel\JurosApp.SharedKernel.csproj", "{401C6534-E6CC-4B69-B689-8855879410B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JurosApp.Taxas.Api.Tests", "tests\JurosApp.Taxas.Api.Tests\JurosApp.Taxas.Api.Tests.csproj", "{3210F8CA-4593-4D48-A93D-34B80576D314}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JurosApp.Taxas.Api.Tests", "tests\JurosApp.Taxas.Api.Tests\JurosApp.Taxas.Api.Tests.csproj", "{3210F8CA-4593-4D48-A93D-34B80576D314}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JurosApp.Calculo.Api.Tests", "tests\JurosApp.Calculo.Api.Tests\JurosApp.Calculo.Api.Tests.csproj", "{EF7CD3AF-C66F-4E53-AF0E-ABF1D0C6FBFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JurosApp.Calculo.Api.Tests", "tests\JurosApp.Calculo.Api.Tests\JurosApp.Calculo.Api.Tests.csproj", "{EF7CD3AF-C66F-4E53-AF0E-ABF1D0C6FBFC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "integration_tests", "integration_tests", "{7F18072C-8B05-497D-833E-C361C253D15C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JurosApp.Calculo.Application.Tests", "tests\JurosApp.Calculo.Application.Tests\JurosApp.Calculo.Application.Tests.csproj", "{2F4869FF-C9B4-48EE-B4BC-2FBD42268E84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JurosApp.Calculo.Application.Tests", "tests\JurosApp.Calculo.Application.Tests\JurosApp.Calculo.Application.Tests.csproj", "{2F4869FF-C9B4-48EE-B4BC-2FBD42268E84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JurosApp.Taxas.Application.Tests", "tests\JurosApp.Taxas.Application.Tests\JurosApp.Taxas.Application.Tests.csproj", "{011B5AE7-3B13-4DB9-BD89-E56D826D58D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JurosApp.Taxas.Application.Tests", "tests\JurosApp.Taxas.Application.Tests\JurosApp.Taxas.Application.Tests.csproj", "{011B5AE7-3B13-4DB9-BD89-E56D826D58D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JurosApp.SharedKernel.Tests", "tests\JurosApp.SharedKernel.Tests\JurosApp.SharedKernel.Tests.csproj", "{F3868013-BDEA-4C24-B5FA-12BC7F9C421A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JurosApp.SharedKernel.Tests", "tests\JurosApp.SharedKernel.Tests\JurosApp.SharedKernel.Tests.csproj", "{F3868013-BDEA-4C24-B5FA-12BC7F9C421A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
