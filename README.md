@@ -26,7 +26,7 @@ This is the first version of the application, bringing the following features:
 As every first version, it has many mapped features, like:
 
 - Configure `docker-compose` to run all the API's provided by the application.
-- Add more automated tests.
+- Add more automated unit tests.
 - Add some integration tests between the API's.
 - Integrate repository URL search with the GitHub API.
 
