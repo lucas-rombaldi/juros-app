@@ -7,7 +7,7 @@
 This is a simple application that provides some services to get taxes and calculate compound interests.
 This application is made in a microservice architecture, where the Tax Provider API is totally independant from the Calculation API, even they're in the same solution for now.
 
-## CI/CD
+## CI
 
 ![Build/Test](https://github.com/lucas-rombaldi/juros-app/workflows/Build%20and%20test/badge.svg)
 
@@ -29,6 +29,7 @@ As every first version, it has many mapped features, like:
 - Add more automated unit tests.
 - Add some integration tests between the API's.
 - Integrate repository URL search with the GitHub API.
+- Configure CD workflow and make improvements in CI workflow to ensure code quality.
 
 ## Get Started!
 
