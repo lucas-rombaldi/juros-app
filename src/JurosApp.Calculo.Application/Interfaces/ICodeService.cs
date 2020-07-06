@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using JurosApp.SharedKernel.Commons;
+using System.Threading.Tasks;
 
 namespace JurosApp.Calculo.Application.Interfaces
 {
@@ -11,6 +12,6 @@ namespace JurosApp.Calculo.Application.Interfaces
         /// Busca a URL do repositório em que este código está armazenado.
         /// </summary>
         /// <returns>URL do repositório</returns>
-        Task<string> GetRepoUrl();
+        Task<Status<string>> GetRepoUrl();
     }
 }

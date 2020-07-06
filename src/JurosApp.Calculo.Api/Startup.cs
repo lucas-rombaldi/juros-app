@@ -26,7 +26,7 @@ namespace JurosApp.Calculo.Api
             services.ConfigureApiVersioningWithOpenApi(
                 documentationTitle: "JurosApp - API de Cálculo", 
                 documentationDescription: "API de Cálculo de Juros", 
-                documentationXmlFileName: "JurosApp.Calculo.Api.xml");
+                assembly: typeof(Startup).Assembly);
 
             services.ConfigureMicroservicesConfiguration(Configuration);
 

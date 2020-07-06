@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 
 namespace JurosApp.SharedKernel.Commons
 {
@@ -17,7 +18,6 @@ namespace JurosApp.SharedKernel.Commons
 
         public Status(Exception exception)
         {
-            Exception = exception;
             ErrorMessage = exception.Message;
         }
 
@@ -30,13 +30,8 @@ namespace JurosApp.SharedKernel.Commons
         public string ErrorMessage { get; set; }
 
         /// <summary>
-        /// <see cref="Exception"/> da operação.
-        /// </summary>
-        public Exception Exception { get; set; }
-
-        /// <summary>
         /// Indica se a operação foi um sucesso.
         /// </summary>
-        public bool Succeeded { get => string.IsNullOrEmpty(ErrorMessage) && Exception == null; }
+        public bool Succeeded { get => string.IsNullOrEmpty(ErrorMessage); }
     }
 }

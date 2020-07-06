@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using JurosApp.SharedKernel.Api;
 using JurosApp.Taxas.Application.Interfaces;
+using JurosApp.SharedKernel.Commons;
+using Microsoft.AspNetCore.Http;
 
 namespace JurosApp.Taxas.Api.V1.Controllers
 {
@@ -19,7 +21,9 @@ namespace JurosApp.Taxas.Api.V1.Controllers
         /// Retorna a taxa de juros padrão da aplicação.
         /// </summary>
         /// <returns>Taxa de juros padrão</returns>
+        /// <response code="200">Objeto "Status" contendo a taxa de juros.</response>
         [HttpGet]
+        [ProducesResponseType(typeof(Status<decimal>), StatusCodes.Status200OK)]
         public IActionResult Get()
         {
             return Ok(_taxasService.GetTaxaJurosPadrao());

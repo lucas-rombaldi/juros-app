@@ -23,7 +23,10 @@ namespace JurosApp.Taxas.Api
         {
             services.AddControllers();
 
-            services.ConfigureApiVersioningWithOpenApi("JurosApp - API de Taxas", "API de Taxas", "JurosApp.Taxas.Api.xml");
+            services.ConfigureApiVersioningWithOpenApi(
+                documentationTitle: "JurosApp - API de Taxas",
+                documentationDescription: "API de Taxas",
+                assembly: typeof(Startup).Assembly);
 
             services.ConfigureMicroservicesConfiguration(Configuration);
 

@@ -7,6 +7,7 @@ using Microsoft.Extensions.Options;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using JurosApp.SharedKernel.Api.OpenApi;
 using JurosApp.SharedKernel.Api.Versioning;
+using System.Reflection;
 
 namespace JurosApp.SharedKernel.Api.Extensions
 {
@@ -50,7 +51,7 @@ namespace JurosApp.SharedKernel.Api.Extensions
             this IServiceCollection services, 
             string documentationTitle, 
             string documentationDescription, 
-            string documentationXmlFileName)
+            Assembly assembly)
         {
             services.AddApiVersioning(options =>
             {
@@ -69,7 +70,7 @@ namespace JurosApp.SharedKernel.Api.Extensions
             services.AddSwaggerGen(options =>
             {
                 options.OperationFilter<SwaggerDefaultValues>();
-                var filePath = Path.Combine(AppContext.BaseDirectory, documentationXmlFileName);
+                var filePath = Path.Combine(AppContext.BaseDirectory, $"{assembly.GetName().Name}.xml");
                 options.IncludeXmlComments(filePath);
             });
 
