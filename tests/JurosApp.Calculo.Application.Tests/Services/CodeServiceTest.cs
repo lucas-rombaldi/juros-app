@@ -11,7 +11,10 @@ namespace JurosApp.Calculo.Application.Tests.Services
             public async void should_get_fixed_url()
             {
                 var service = new CodeService();
-                Assert.Equal(CodeService.REPO_URL, await service.GetRepoUrl());
+                var result = await service.GetRepoUrl();
+
+                Assert.True(result.Succeeded);
+                Assert.Equal(CodeService.REPO_URL, result.Value);
             }
         }
     }
